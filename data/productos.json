@@ -34,5 +34,14 @@
         "img": "img1",
         "code": "abc12457s",
         "stock": 34
+    },
+    {
+        "id": 6,
+        "title": "Lapto",
+        "description": "DELL",
+        "price": 1000,
+        "img": "img1",
+        "code": "abc1245",
+        "stock": 34
     }
 ]

@@ -4,13 +4,14 @@ import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 
 export default class ProductManager {
 
-    static #id = 0;
+    static #id;
     #products;
     #path
 
     constructor(path) {
         this.#path = path;
         this.#products = this.#leerArchivo();
+        ProductManager.#id = this.#products.length > 0 ? this.#products[this.#products.length - 1].id : 0;
     }
 
     #leerArchivo() {
@@ -48,8 +49,8 @@ export default class ProductManager {
                 };
 
                 if (!Object.values(newProduct).includes(undefined)) {
-                    this.#products.push(newProduct);
                     writeFileSync(this.#path, JSON.stringify(this.#products));
+                    this.#products.push(newProduct);
                     mensaje = 'Producto agregado exitosamente!';
                 } else
                     mensaje = "Se requiere completar todos los campos";
@@ -80,8 +81,8 @@ export default class ProductManager {
             const indice = this.#products.findIndex(p => p.id === id);
             if (indice != -1) {
                 const { id, ...rest } = propiedades;
-                this.#products[indice] = { ...this.#products[indice], ...rest };
                 writeFileSync(this.#path, JSON.stringify(this.#products));
+                this.#products[indice] = { ...this.#products[indice], ...rest };
                 mensaje = 'El producto fue actualizado correctamente!'
             } else
                 mensaje = `El producto con ID ${id} no existe`;
@@ -98,8 +99,8 @@ export default class ProductManager {
             const indice = this.#products.findIndex(p => p.id === id);
 
             if (indice >= 0) {
-                this.#products.splice(indice, 1);
                 writeFileSync(this.#path, JSON.stringify(this.#products));
+                this.#products.splice(indice, 1);
                 mensaje = 'Producto eliminado correctamente';
             } else
                 mensaje = `El producto con ID ${id} no existe`;
