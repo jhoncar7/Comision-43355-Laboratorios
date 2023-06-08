@@ -8,8 +8,8 @@ export default class ProductManager {
     #products;
     #path
 
-    constructor(path) {
-        this.#path = path;
+    constructor() {
+        this.#path = './data/productos.json';
         this.#products = this.#leerArchivo();
         ProductManager.#id = this.#products.length > 0 ? this.#products[this.#products.length - 1].id : 0;
     }
@@ -29,7 +29,7 @@ export default class ProductManager {
     }
 
     addProduct(title, description, price, img, code, stock) {
-
+        console.log({title, description, price, img, code, stock});
         try {
             let mensaje;
 
