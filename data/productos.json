@@ -52,5 +52,14 @@
         "img": "Prueba Post",
         "code": "123456787",
         "stock": 45
+    },
+    {
+        "id": 8,
+        "title": "Prueba Post",
+        "description": "Prueba Post",
+        "price": 5000,
+        "img": "Prueba Post",
+        "code": "Prueba Post",
+        "stock": 45
     }
 ]

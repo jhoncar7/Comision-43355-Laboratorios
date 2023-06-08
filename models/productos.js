@@ -68,7 +68,7 @@ export default class ProductManager {
     getProductById(id) {
         const productoId = this.#products.find(p => p.id === id);
 
-        return productoId ? productoId : `El producto con ID ${id} no existe.`;
+        return productoId ? productoId : false;
     }
 
     updtaeProduct(id, propiedades) {
