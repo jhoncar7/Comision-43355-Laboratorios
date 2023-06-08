@@ -43,5 +43,14 @@
         "img": "img1",
         "code": "abc1245",
         "stock": 34
+    },
+    {
+        "id": 7,
+        "title": "Pasta",
+        "description": "Marca cualquiera",
+        "price": 450,
+        "img": "Prueba Post",
+        "code": "123456787",
+        "stock": 45
     }
 ]

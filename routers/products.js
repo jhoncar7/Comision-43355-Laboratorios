@@ -27,12 +27,16 @@ router.post('/', (req, res) => {
     return res.json({ result });
 });
 
-router.put('/', (req, res) => {
-    return res.json({ msg: 'PUT products' });
+router.put('/:id', (req, res) => {
+    const { id } = req.params;
+    const result = productos.updtaeProduct(parseInt(id), req.body);
+    return res.json({ result });
 });
 
-router.delete('/', (req, res) => {
-    return res.json({ msg: 'DELETE products' });
+router.delete('/:id', (req, res) => {
+    const { id } = req.params;
+    const result = productos.deleteProduct(parseInt(id));
+    return res.json({ result });
 });
 
 export default router;
