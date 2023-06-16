@@ -20,3 +20,6 @@ npm run dev
 6. Explicación de la solución parte 4 [Link video explicativo youtube](https://www.youtube.com/watch?v=MM45jm_Epew)
 7. Explicación de la solución parte 5 [Link video explicativo youtube](https://www.youtube.com/watch?v=HXPA-6P7XXM)
 8. Explicación de la solución parte 6 [Link video explicativo youtube](https://www.youtube.com/watch?v=Kno2UNx_h_8)
+9. Explicación Laboratorio Socket Parte 1 [Link video explicativo youtube](https://www.youtube.com/watch?v=hKFaKuydXgU)
+
+100. Aprediendo a programar [Link](https://www.instagram.com/reel/CtcbODopBpM/?igshid=MDQ0YTdkOWViMw%3D%3D)
