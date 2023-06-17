@@ -2,14 +2,21 @@ import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 
 export default class ProductManager {
 
+    static #instance;
     static #id;
     #products;
     #path
 
     constructor() {
+
+        if (ProductManager.#instance)
+            return ProductManager.#instance;
+
         this.#path = './data/productos.json';
         this.#products = this.#leerArchivo();
         ProductManager.#id = this.#products.length > 0 ? this.#products[this.#products.length - 1].id : 0;
+
+        ProductManager.#instance = this;
     }
 
     #leerArchivo() {
@@ -27,7 +34,7 @@ export default class ProductManager {
     }
 
     addProduct(title, description, price, img, code, stock) {
-        console.log({title, description, price, img, code, stock});
+        console.log({ title, description, price, img, code, stock });
         try {
             let mensaje;
 
