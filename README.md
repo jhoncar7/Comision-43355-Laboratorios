@@ -8,8 +8,6 @@
 ```
 npm run dev
 ```
-4. Los datos, en este caso el archivo ```.json``` lo guardo en una carpeta llamada ```data```
+4. Lista de solucion de laboratorios [Lista de Reproducción](https://www.youtube.com/watch?v=GR4a30ITzwQ&list=PLfwc_gZbuuDIMENFKaVcuHgHDfrV5Wwe4)
 
-5. Lista de solucion de laboratorios [Lista de Reproducción](https://www.youtube.com/watch?v=GR4a30ITzwQ&list=PLfwc_gZbuuDIMENFKaVcuHgHDfrV5Wwe4)
-
-6. Aprediendo a programar [Link](https://www.instagram.com/reel/CtcbODopBpM/?igshid=MDQ0YTdkOWViMw%3D%3D)
+5. Aprediendo a programar [Link](https://www.instagram.com/reel/CtcbODopBpM/?igshid=MDQ0YTdkOWViMw%3D%3D)
