@@ -2,7 +2,7 @@
 
 1. Clonar el repositorio y ejecutar el comando ```npm i``` para instalar las dependencias.
 
-2. Renombrar el archivo ```.EXAMPLE.env``` a ````.env`` y agregar los valores dentro de las variables.
+2. Renombrar el archivo ```.EXAMPLE.env``` a ```.env``` y agregar los valores dentro de las variables.
 
 3. Para andar la aplicacion ejecutar
 ```
