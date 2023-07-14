@@ -1,4 +1,4 @@
-# Solución laboratorio 1 y 2
+# Solución laboratorios
 
 1. Clonar el repositorio y ejecutar el comando ```npm i``` para instalar las dependencias.
 
