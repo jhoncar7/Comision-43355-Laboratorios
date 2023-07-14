@@ -4,11 +4,11 @@
 
 2. Renombrar el archivo ```.EXAMPLE.env``` a ```.env``` y agregar los valores dentro de las variables.
 
-3. Para andar la aplicacion ejecutar en desarrollo
+3. Ejecutar en desarrollo
 ```
 npm run dev
 ```
-4. Para andar la aplicacion ejecutar en Producción
+4. Ejecutar en Producción
 ```
 npm start
 ```
