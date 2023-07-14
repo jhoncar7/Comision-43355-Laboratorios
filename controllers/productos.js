@@ -101,7 +101,7 @@ export const eliminarProducto = async (req = request, res = response) => {
     }
 }
 
-export const obtenerProductosPaginadosSocket = async (limite = 5, desde = 0) => {
+export const obtenerProductosPaginadosSocket = async (limite = 20, desde = 0) => {
     const query = { status: true };
   
     const [productos, total] = await Promise.all([
